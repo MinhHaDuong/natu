@@ -36,9 +36,9 @@ _FORMATS = {
          div=None,
          exp_fmt=lambda x: '<sup>%s</sup>' % x,
          ),
-    'L':  # LaTeX
+    'L':  # LaTeX. \, is a \kern is 1/6th em rigid width non breakable space.
     dict(_DEFAULT_FORMAT,
-         mul='\,',
+         mul=r'\\,',
          div=None,
          group=r'\left({0}\right)',
          exp_fmt=lambda x: ('^{%s}' % x

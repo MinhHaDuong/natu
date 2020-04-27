@@ -328,7 +328,7 @@ def _times(code):
     if code == 'H':
         return '&nbsp;'
     if code == 'L':
-        return '\,'
+        return r'\\,'
     return ' '
 
 # Decorators
